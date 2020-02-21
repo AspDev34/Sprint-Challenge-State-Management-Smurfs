@@ -1,11 +1,11 @@
 //import my actions which need to be referenced by the reducer's 2nd argument
-import { BEGIN_GETTING_SMURF, SUCCESSFULLY_GOT_SMURF, DID_NOT_GET_SMURF } from '../actions/smurfActions';
+import { BEGIN_GETTING_SMURF, SUCCESSFULLY_GOT_SMURF, DID_NOT_GET_SMURF, ADDING_DATA_FAILURE } from '../actions/smurfActions';
 
 
 // This is my initial state, every smurf object starts with these key values prior to API calls. 
 const initialState = {
     isLoading: false,
-    smurf: [],
+    smurf: null,
     error: ''
 };
 
@@ -27,6 +27,11 @@ export const smurfReducer = (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: false,
+                error: action.payload
+            };
+        case ADDING_DATA_FAILURE:
+            return {
+                ...state,
                 error: action.payload
             };
         default:
