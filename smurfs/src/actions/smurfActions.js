@@ -3,7 +3,7 @@ import axios from 'axios';
 export const BEGIN_GETTING_SMURF = 'BEGIN_GETTING_SMURF';
 export const SUCCESSFULLY_GOT_SMURF = 'SUCCESSFULLY_GOT_SMURF';
 export const DID_NOT_GET_SMURF = 'DID_NOT_GET_SMURF';
-export const ADD_A_SMURF = 'ADD_A_SMURF';
+
 
 //this is my action, similar to withdrawals/deposits in bank metaphor
 export const getSmurfs = () => dispatch => {
