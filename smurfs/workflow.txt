@@ -1,0 +1,10 @@
+The bank valut is your redux store
+The bank teller is your reducer
+And withdrawal/deposits is your actions
+While the withdrawal/deposit slips is your action creators.
+
+
+Set up "empty" reducer and initial state 👉 Set up store and Provider 👉
+Connect components 👉 Add events and event handlers in UI 👉 Build action creators 👉
+write the reducer logic for the actions 👉 Rinse and repeat
+
