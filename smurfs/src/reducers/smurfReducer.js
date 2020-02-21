@@ -8,7 +8,7 @@ const initialState = {
     error: ''
 };
 
-// The reducer is the bank Teller
+// The reducer is the bank Teller in the banking metaphor
 export const smurfReducer = (state = initialState, action) => {
     switch (action.type) {
         default:
