@@ -53,7 +53,7 @@ const SmurfComp = (props) => {
                 <input type='submit' value='Add a Smurf' onClick={handleAdd}/>
             </form>
 
-            <button onClick={props.getSmurfs}>Get Smurfs</button>
+            <button className="getSmurf" onClick={props.getSmurfs}>Get Smurfs</button>
 
             {!props.smurf && !props.isLoading && (<h3>Got a Smurf</h3>)}
 
