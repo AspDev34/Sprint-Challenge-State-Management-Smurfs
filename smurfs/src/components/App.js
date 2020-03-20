@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import SmurfComp from './SmurfComp';
 import "./App.css";
 
-
+//re-factored for web28
 class App extends Component {
   render() {
     return (
